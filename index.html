@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Web Speech Recognition</title>
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <td style="min-width: 200px;">
+                    <div id="lanuage_container" style="min-width: 500px;">
+                        <label>Select Language</label>
+                        <select name="language" id="language">
+                            <option value="en-GB">English</option>
+                            <option value="es-ES">Espanayol</option>
+                        </select>
+                    </div>
+                </td>
+                <td style="min-width: 200px;">
+                        <div id="confirm_container" style="min-width: 500px;">
+                            <label>Confirm Dictation</label>
+                            <input type="checkbox" id="confirm" checked="true" />
+                        </div>
+                </td>
+            </tr>
+        </table>
+        
+        <label>Speech</label>
+        <br />
+        <textarea id="result" style="min-width: 500px;min-height: 500px;"></textarea>
+        <br />
+        <span id="wordCounter">0 Words.</span>
+
+        <br /> <br />
+        <table>
+            <tr>
+                <td style="min-width: 500px;">
+                    <span id="recognition" style="min-width: 500px;">Recognized speech will appear here.</span>
+                </td>
+            </tr>
+        </table>
+        
+        <button id="record">Record</button>
+        
+
+        <script src="content/js/index.js"></script>
+    </body>
+</html>
