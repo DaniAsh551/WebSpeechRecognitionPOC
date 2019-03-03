@@ -2,7 +2,7 @@
 function init(){
     window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
 
-    if(! ('SpeechRecognition' in window))
+    if(!window.SpeechRecognition)
         alert("Speech Recognition is not supported on this browser. Please consider upgrading.");
 
     document.getElementById('record').addEventListener('click', function(e){
